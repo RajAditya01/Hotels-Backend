@@ -3,6 +3,7 @@ const router = express.Router();
 const Person = require('./../models/Person');
 const {jwtAuthMiddleware, generateToken} = require('./../jwt');
 
+
 // POST route to add a person
 router.post('/signup', async (req, res) =>{
     try{
